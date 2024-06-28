@@ -9,8 +9,8 @@ public class Solution
     public IList<IList<int>> Subsets(int[] nums)
     {
         // 回溯法经典题
-        subsets = [];
-        current = [];
+        subsets.Clear();
+        current.Clear();
         DFS(nums, 0);
         return subsets;
     }

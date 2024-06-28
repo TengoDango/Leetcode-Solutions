@@ -23,13 +23,11 @@ public class Solution
                 // 两区间不相交
                 merged.Add(current);
                 current = interval;
-                flag = false;
             }
             else
             {
                 // 两区间相交
                 current[1] = int.Max(current[1], interval[1]);
-                flag = true;
             }
         }
         merged.Add(current);

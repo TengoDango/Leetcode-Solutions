@@ -9,8 +9,8 @@ public class Solution
     public IList<IList<int>> Combine(int n, int k)
     {
         // 回溯法
-        combines = [];
-        current = [];
+        combines.Clear();
+        current.Clear();
         DFS(1, n, k);
         return combines;
     }
